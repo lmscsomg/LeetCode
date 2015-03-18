@@ -22,7 +22,7 @@ class Solution{
             }
 
             if(carry > 0){
-                tail->next = new ListNode(carry)
+                tail->next = new ListNode(carry);
             }
 
             l1 = dummy->next;
@@ -30,4 +30,4 @@ class Solution{
 
             return l1;
         }
-}
+};
