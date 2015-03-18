@@ -1,8 +1,8 @@
 class Solution{
     public:
         int lengthOfLongestSubstring(string s){
-            const int MAX_CHARS;
-            int pos[MAX_CAHRS];
+            const int MAX_CHARS = 256;
+            int pos[MAX_CHARS];
             memset(pos, -1, sizeof(pos));
 
             //last: the last position of the repeating char
