@@ -11,7 +11,7 @@ class Solution{
             int i = min(k/2, m), j = min(k/2, n);
 
             if(A[i-1] < B[j-1]){
-                return findKth(A+i, m-i, B, n, k-i)
+                return findKth(A+i, m-i, B, n, k-i);
             }else{
                 return findKth(A, m, B+j, n-j, k-j);
             }
@@ -23,7 +23,7 @@ class Solution{
             if((m + n)%2 == 1){
                 return findKth(A, m, B, n, (m+n+1)/2);
             }else{
-                return (double)((findKth(A, m, B, n, (m+n)/2)) + findKth(A, m, B, n (m+n)/2+1))/2;
+                return (double)((findKth(A, m, B, n, (m+n)/2)) + findKth(A, m, B, n, (m+n)/2+1))/2;
             }
         }
 
