@@ -7,7 +7,7 @@ class Solution{
             for(int i = 1; i < n ; i++){
                 int length = 1;
                 for(int j = i-1, k = i+1; j >= 0 && k <= n && s[j] == s[k]; j--, k++){
-                    lenghth += 2;
+                    length += 2;
                 }
 
                 if(length > maxlength){
@@ -18,8 +18,8 @@ class Solution{
                 if(s[i] != s[i-1])
                     continue;
 
-                length = 1;
-                for (int j = i-2, k = i+1; j >= 0 && k< =n && s[j] == s[k]; j--, k++){
+                length = 2;
+                for (int j = i-2, k = i+1; j >= 0 && k <=n && s[j] == s[k]; j--, k++){
                     length += 2;
                 }
 
@@ -28,6 +28,6 @@ class Solution{
                     start = i - length/2;
                 }
             }
-            return r.substr(start, maxlength);
+            return s.substr(start, maxlength);
         }
-}
+};
