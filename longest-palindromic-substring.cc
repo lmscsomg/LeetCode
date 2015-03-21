@@ -1,6 +1,6 @@
 class Solution{
     public:
-        string longestPalindromic(string s){
+        string longestPalindrome(string s){
             const int n = s.size();
 
             int maxlength = 1, start = 0;
